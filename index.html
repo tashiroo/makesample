@@ -3,41 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
 <body>
-  <div id="root"></div>
-  <script>
-    class EssayForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: `Please write an essay about yuor favorite  DOM elemnet.`
-    };
+  <headr>
+    <a></a>
+    <h1>Discover the world's top Designers &amp; Creatives</h1>
+  </headr>
+  <div>image</div>
+  <p>
+    Art by <a href="#">Peteer Tarka</a>
+  </p>
 
-    this.handleChange = this.handleChenge.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-  handleChenge(event) {
-    this.setState({value: event.target.value});
-  }
+  <nav>
+    Already a member?<a href="#">Sign In</a>
+  </nav>
+  <main>
+    <h2>Sign up to Dribbble</h2>
+    <div>
+      <fieldset>
+        <p>Google</p>
+        <p>
+          Wrong identity? Sign out at Google and<a href="#">start over.</a>
+        </p>
+      </fieldset>
+    </div>
 
-  handleSubmit(event) {
-   alert(`An essay was submitted ` + this.state.value);
-   event.preventDefault();
-  }
-  render() {
-    return(
-      <form onSubmit={this.handleSubmit}>
-      <label>
-      Essay:<textarea value={this.state.value} onChenge={this.handleChenge} />
-      </label>
-      <imput type = "submit" value="submit"/>
-      </form>
-    );
-      
-    }
-}
-  </script>
+    <div>
+      <fieldset>
+        <label>Name</label>
+        <input></input>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <label>Username</label>
+        <input></input>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <label>Email</label>
+        <input></input>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <label>Password</label>
+        <input></input>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <label>
+          <input type="radio"></input>Creating an account means you're okay
+          with our <a href="#">Terms of Service,PrivacyPolicy,</a>and our
+          default <a href="#">Notification Settings.</a>
+        </label>
+      </fieldset>
+    </div>
+    <input type="submit" value="Create Account"></input>
+    <p>
+      This site is protected by reCAPTCHA and the Google
+      <a href="#">Privacy Policy,</a>and our default{" "}
+      <a href="#">Notification Settings.</a>
+    </p>
+  </main>
+</div>
 </body>
 </html>
